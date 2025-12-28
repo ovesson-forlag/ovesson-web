@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ovesson Forlag</title>
+  <meta name="description" content="Utgivelser fra Ovesson Forlag." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph (nøytral) -->
+  <meta property="og:title" content="Ovesson Forlag" />
+  <meta property="og:description" content="Utgivelser fra Ovesson Forlag." />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1>Ovesson Forlag</h1>
+      <p class="tagline">Utgivelser i stillhet.</p>
+    </header>
+
+    <section class="section">
+      <h2>Utgivelser</h2>
+      <ul class="list">
+        <!-- Bytt ut/legg til når du har første utgivelse -->
+        <li class="muted">Ingen utgivelser publisert ennå.</li>
+
+        <!-- Eksempel (fjern kommentaren når du vil bruke den)
+        <li>
+          <span class="title">Tittel på bok</span>
+          <span class="meta">ePub · 2026 · ISBN 978-82-...</span>
+          <span class="links">
+            <a href="#" aria-label="Les mer">Les mer</a>
+          </span>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Om</h2>
+      <p>
+        Ovesson Forlag utgir tekster i digitale formater.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Kontakt</h2>
+      <p class="muted">
+        For henvendelser: <span class="mono">kontakt@ovesson.no</span>
+      </p>
+      <!-- Hvis du ikke vil vise e-post enda, bytt til:
+      <p class="muted">Kontakt: via ovesson.no</p>
+      -->
+    </section>
+
+    <footer class="foot">
+      <p class="muted">© <span id="year"></span> Ovesson Forlag</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
